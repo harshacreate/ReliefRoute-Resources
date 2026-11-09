@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=68","wheel"]
+build-backend="setuptools.build_meta"
+[project]
+name="reliefroute-resources"
+version="0.1.0"
+description="Forecasts synthetic demand intensity from an event-impact decay, road disruption, rainfall, calendar patterns,"
+requires-python=">=3.9"
+dependencies=["numpy==2.0.2","scikit-learn==1.6.1"]
+[project.optional-dependencies]
+test=["pytest==8.4.2"]
+[tool.pytest.ini_options]
+testpaths=["tests"]
